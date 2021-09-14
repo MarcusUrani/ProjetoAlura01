@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de média - Aula 01</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="page__title">
+            Calculadora de média</h1>
+        <p class="page__subtitle">
+            Descubra qual a sua média de nota de todas as provas
+        </p>
+        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg"
+            class="page__logo" alt="Logo imersão dev">
+        <a href="https://alura.com.br/" target="_blank" class="page__link">
+            <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" class="alura__logo">
+        </a>
+    </div>
+    <div class="boletim">
+        <div class="card">
+            <h2 class="card__notas">Boletim</h2>
+            <div class="campo">
+                <input class="nome" id="nome" type="text" required placeholder="Digite seu nome aqui:">
+                <label for="nome">Nome</label>
+            </div>
+            <div class="campo">
+                <input class="notaPrimeiro" id="notaPrimeiro" type="text" required
+                    placeholder="Digite a sua nota aqui:">
+                <label for="notaPrimeiro">Nota primeiro bimestre</label>
+            </div>
+            <div class="campo">
+                <input class="notaSegundo" id="notaSegundo" type="text" required placeholder="Digite sua nota aqui:">
+                <label for="notaSegundo">Nota segundo bimestre</label>
+            </div>
+            <div class="campo">
+                <input class="notaTerceiro" id="notaTerceiro" type="text" required placeholder="Digite sua nota aqui:">
+                <label for="notaTerceiro">Nota terceiro bimestre</label>
+            </div>
+            <div class="campo">
+                <input class="notaQuarto" id="notaQuarto" type="text" required placeholder="Digite sua nota aqui:">
+                <label for="notaQuarto">Nota quarto bimestre</label>
+            </div>
+            <div class "botao flex">
+                <button onclick="calculaMedia()" class="botao__btn">Calcular média</button>
+            </div>
+            <div class="flex">
+                <hr>
+            </div>
+
+            <p id="mediaFinal"></p>
+        </div>
+    </div>
+</body>
+
+<script src="index.js"></script>
+
+</html>
